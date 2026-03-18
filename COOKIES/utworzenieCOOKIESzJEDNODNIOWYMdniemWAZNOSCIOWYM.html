@@ -1,0 +1,6 @@
+<script>
+    let date=new Data();
+    let tomorrow=new Data(date.getTime() + 24 * 60 * 1000);
+    date = tomorrow.toUTCString();
+    document.cookie = "user=John;expires="+date;
+</script>

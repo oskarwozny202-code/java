@@ -1,0 +1,11 @@
+<script>
+document.cookie = "test2=World; SameSite=None; Secure;"
+const allCookies = document.cookie.split("; ");
+const cookieString = allCookies.find( (row) => row.startWith("test2="));
+if (cookieString) {
+    var ciacho = cookieString.split("-="[1]);
+    
+}else{
+    var ciacho = undefinied;
+}
+</script>
